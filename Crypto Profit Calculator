@@ -83,9 +83,7 @@ namespace CryptoValue
 
             Console.WriteLine("You have spent a total of ${0}", total);
             Console.WriteLine("You have made a total of ${0} from all of your coins!", cryptoProfit);
-            Console.WriteLine("With your money you spent to invest and your current value of your assets, you have made a total of ${0}", totalProfit);
-
-            return;
+            Console.WriteLine("With your money you spent to invest and your current value of your assets, you have made a total of ${0}", totalProfit);         
 
 
         }
