@@ -1,0 +1,93 @@
+using System;
+
+namespace CryptoValue
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Variables
+            double bitcoinBought;
+            double bitcoinValue;
+            double bitcoinProfit;
+            double bitcoinOwn;
+            double litecoinBought;
+            double litecoinValue;
+            double litecoinProfit;
+            double litecoinOwn;
+            double tronBought;
+            double tronValue;
+            double tronProfit;
+            double tronOwn;
+            double raiblockBought;
+            double raiblockValue;
+            double raiblockProfit;
+            double raiblockOwn;
+            double etherBought;
+            double etherValue;
+            double etherProfit;
+            double etherOwn;
+            double total;
+            double totalProfit;
+            double cryptoProfit;
+ 
+            //Bitcoin
+            Console.WriteLine("How much money did you spend on your Bitcoin");
+                bitcoinBought = double.Parse(Console.ReadLine());
+                Console.WriteLine("How much Bitcoin do you own?");
+                bitcoinOwn = double.Parse(Console.ReadLine());
+                Console.WriteLine("What is the current value of the Bitcoin?");
+                bitcoinValue = double.Parse(Console.ReadLine());
+           
+            //Litecoin
+                Console.WriteLine("How much money did you spend on your Litecoin?");
+                litecoinBought = double.Parse(Console.ReadLine());
+                Console.WriteLine("How much Litecoin do you own?");
+                litecoinOwn = double.Parse(Console.ReadLine());
+                Console.WriteLine("What is the current value of Litecoin?");
+                litecoinValue = double.Parse(Console.ReadLine());
+           
+            //Tron
+                Console.WriteLine("How much money did you spend on your Tron?");
+                tronBought = double.Parse(Console.ReadLine());
+                Console.WriteLine("How much Tron do you own?");
+                tronOwn = double.Parse(Console.ReadLine());
+                Console.WriteLine("What is the current value of Tron?");
+                tronValue = double.Parse(Console.ReadLine());
+            
+            //RaiBlock
+                Console.WriteLine("How much money did you spend on your RaiBlock?");
+                raiblockBought = double.Parse(Console.ReadLine());
+                Console.WriteLine("How much RaiBlock do you own?");
+                raiblockOwn = double.Parse(Console.ReadLine());
+                Console.WriteLine("What is the current value of RaiBlock?");
+                raiblockValue = double.Parse(Console.ReadLine());
+
+            //Ethereum
+            Console.WriteLine("How much money did you spend on your Ethereum?");
+            etherBought = double.Parse(Console.ReadLine());
+            Console.WriteLine("How much Ethereum do you own?");
+            etherOwn = double.Parse(Console.ReadLine());
+            Console.WriteLine("What is the current value of Ethereum?");
+            etherValue = double.Parse(Console.ReadLine());
+
+            //Calculations
+            bitcoinProfit = bitcoinOwn * bitcoinValue;
+            litecoinProfit = litecoinOwn * litecoinValue;
+            tronProfit = tronOwn * tronValue;
+            raiblockProfit = raiblockOwn * raiblockValue;
+            etherProfit = etherOwn * etherValue;           
+            total = bitcoinBought + litecoinBought + tronBought + raiblockBought + etherBought;
+            cryptoProfit = bitcoinProfit + litecoinProfit + tronProfit + raiblockProfit + etherProfit;
+            totalProfit = cryptoProfit - total;
+
+            Console.WriteLine("You have spent a total of ${0}", total);
+            Console.WriteLine("You have made a total of ${0} from all of your coins!", cryptoProfit);
+            Console.WriteLine("With your money you spent to invest and your current value of your assets, you have made a total of ${0}", totalProfit);
+
+            return;
+
+
+        }
+    }
+}
